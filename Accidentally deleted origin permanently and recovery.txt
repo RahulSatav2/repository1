@@ -1,0 +1,216 @@
+
+E:\git-repo\repository1 (main -> origin)
+λ git remote show
+origin
+
+E:\git-repo\repository1 (main -> origin)
+λ git remote show origin
+* remote origin
+  Fetch URL: git@github.com:RahulSatav2/repository1.git
+  Push  URL: git@github.com:RahulSatav2/repository1.git
+  HEAD branch: main
+  Remote branch:
+    main tracked
+  Local branch configured for 'git pull':
+    main merges with remote main
+  Local ref configured for 'git push':
+    main pushes to main (up to date)
+
+E:\git-repo\repository1 (main -> origin)
+λ git remote remove origin
+
+E:\git-repo\repository1 (main)
+λ git remote show
+
+E:\git-repo\repository1 (main)
+λ git remote add enigma git@github.com:RahulSatav2/repository1.git
+
+E:\git-repo\repository1 (main)
+λ git remote show
+enigma
+
+E:\git-repo\repository1 (main)
+λ git remote show enigma
+* remote enigma
+  Fetch URL: git@github.com:RahulSatav2/repository1.git
+  Push  URL: git@github.com:RahulSatav2/repository1.git
+  HEAD branch: main
+  Remote branch:
+    main new (next fetch will store in remotes/enigma)
+  Local ref configured for 'git push':
+    main pushes to main (up to date)
+
+E:\git-repo\repository1 (main)
+λ git status
+On branch main
+nothing to commit, working tree clean
+
+E:\git-repo\repository1 (main)
+λ git log
+commit f096a39670d15ef891d9e8851deef3c1b5865933 (HEAD -> main)
+Author: rahul <rahulsatav2@gmail.com>
+Date:   Mon Aug 16 10:51:13 2021 +0530
+
+    Saved Progress as a file
+
+commit bf5cae6379e79908f549e28e89c42f627327eca2
+Author: rahul <rahulsatav2@gmail.com>
+Date:   Mon Aug 16 10:48:39 2021 +0530
+
+    Made more changes
+
+commit 4ade59c47fa0c49bdb53da8aaa908e4b0ba69f22
+Author: rahul <rahulsatav2@gmail.com>
+Date:   Mon Aug 16 10:42:26 2021 +0530
+
+    Edited the Cloned Repo's ReadMe File on my local device
+
+commit 52b2b5324c01b5b5a2bb83c12f14e4c26346265a
+Author: Rahul Satav <73294506+RahulSatav2@users.noreply.github.com>
+Date:   Mon Aug 16 10:24:46 2021 +0530
+
+    Initial commit
+
+E:\git-repo\repository1 (main)
+λ git status
+On branch main
+nothing to commit, working tree clean
+
+E:\git-repo\repository1 (main)
+λ git add .
+
+E:\git-repo\repository1 (main)
+λ git commit -m "Linking Repo and Name Change"
+On branch main
+nothing to commit, working tree clean
+
+E:\git-repo\repository1 (main)
+λ cd enigma
+The system cannot find the path specified.
+
+E:\git-repo\repository1 (main)
+λ git remote remove enigma
+
+E:\git-repo\repository1 (main)
+λ git remote show
+
+E:\git-repo\repository1 (main)
+λ git remote add origin git@github.com:RahulSatav2/repository1.git
+
+E:\git-repo\repository1 (main)
+λ git remote show
+origin
+
+E:\git-repo\repository1 (main)
+λ git remote show origin
+* remote origin
+  Fetch URL: git@github.com:RahulSatav2/repository1.git
+  Push  URL: git@github.com:RahulSatav2/repository1.git
+  HEAD branch: main
+  Remote branch:
+    main new (next fetch will store in remotes/origin)
+  Local ref configured for 'git push':
+    main pushes to main (up to date)
+
+E:\git-repo\repository1 (main)
+λ git log
+commit f096a39670d15ef891d9e8851deef3c1b5865933 (HEAD -> main)
+Author: rahul <rahulsatav2@gmail.com>
+Date:   Mon Aug 16 10:51:13 2021 +0530
+
+    Saved Progress as a file
+
+commit bf5cae6379e79908f549e28e89c42f627327eca2
+Author: rahul <rahulsatav2@gmail.com>
+Date:   Mon Aug 16 10:48:39 2021 +0530
+
+    Made more changes
+
+commit 4ade59c47fa0c49bdb53da8aaa908e4b0ba69f22
+Author: rahul <rahulsatav2@gmail.com>
+Date:   Mon Aug 16 10:42:26 2021 +0530
+
+    Edited the Cloned Repo's ReadMe File on my local device
+
+commit 52b2b5324c01b5b5a2bb83c12f14e4c26346265a
+Author: Rahul Satav <73294506+RahulSatav2@users.noreply.github.com>
+Date:   Mon Aug 16 10:24:46 2021 +0530
+
+    Initial commit
+
+E:\git-repo\repository1 (main)
+λ git reset -soft f096a39670d15ef891d9e8851deef3c1b5865933
+error: did you mean `--soft` (with two dashes)?
+
+E:\git-repo\repository1 (main)
+λ git reset --soft f096a39670d15ef891d9e8851deef3c1b5865933
+
+E:\git-repo\repository1 (main)
+λ git local add origin
+git: 'local' is not a git command. See 'git --help'.
+
+E:\git-repo\repository1 (main)
+λ git reset --soft bf5cae6379e79908f549e28e89c42f627327eca2
+
+E:\git-repo\repository1 (main)
+λ git remote add origin git@github.com:RahulSatav2/repository1.git
+error: remote origin already exists.
+
+E:\git-repo\repository1 (main)
+λ git origin master
+git: 'origin' is not a git command. See 'git --help'.
+
+E:\git-repo\repository1 (main)
+λ git reset --hard f096a39670d15ef891d9e8851deef3c1b5865933
+HEAD is now at f096a39 Saved Progress as a file
+
+E:\git-repo\repository1 (main)
+λ git log
+commit f096a39670d15ef891d9e8851deef3c1b5865933 (HEAD -> main)
+Author: rahul <rahulsatav2@gmail.com>
+Date:   Mon Aug 16 10:51:13 2021 +0530
+
+    Saved Progress as a file
+
+commit bf5cae6379e79908f549e28e89c42f627327eca2
+Author: rahul <rahulsatav2@gmail.com>
+Date:   Mon Aug 16 10:48:39 2021 +0530
+
+    Made more changes
+
+commit 4ade59c47fa0c49bdb53da8aaa908e4b0ba69f22
+Author: rahul <rahulsatav2@gmail.com>
+Date:   Mon Aug 16 10:42:26 2021 +0530
+
+    Edited the Cloned Repo's ReadMe File on my local device
+
+commit 52b2b5324c01b5b5a2bb83c12f14e4c26346265a
+Author: Rahul Satav <73294506+RahulSatav2@users.noreply.github.com>
+Date:   Mon Aug 16 10:24:46 2021 +0530
+
+    Initial commit
+
+E:\git-repo\repository1 (main)
+λ git status
+On branch main
+nothing to commit, working tree clean
+
+E:\git-repo\repository1 (main)
+λ cd origin
+The system cannot find the path specified.
+
+E:\git-repo\repository1 (main)
+λ git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+
+E:\git-repo\repository1 (main)
+λ git push --set-upstream origin main
+Everything up-to-date
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+E:\git-repo\repository1 (main -> origin)
+λ
