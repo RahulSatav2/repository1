@@ -1,0 +1,139 @@
+
+E:\git-repo (master)
+λ cd git@github.com:RahulSatav2/repository1.git
+The filename, directory name, or volume label syntax is incorrect.
+
+E:\git-repo (master)
+λ git clone git@github.com:RahulSatav2/repository1.git
+Cloning into 'repository1'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+E:\git-repo (master)
+λ cd repository1\
+
+E:\git-repo\repository1 (main -> origin)
+λ ls -all
+total 5
+drwxr-xr-x 1 RAHUL 197121  0 Aug 16 10:35 ./
+drwxr-xr-x 1 RAHUL 197121  0 Aug 16 10:35 ../
+drwxr-xr-x 1 RAHUL 197121  0 Aug 16 10:35 .git/
+-rw-r--r-- 1 RAHUL 197121 40 Aug 16 10:35 README.md
+
+E:\git-repo\repository1 (main -> origin)
+λ code .
+
+E:\git-repo\repository1 (main -> origin)
+λ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+E:\git-repo\repository1 (main -> origin)
+λ git log
+commit 52b2b5324c01b5b5a2bb83c12f14e4c26346265a (HEAD -> main, origin/main, origin/HEAD)
+Author: Rahul Satav <73294506+RahulSatav2@users.noreply.github.com>
+Date:   Mon Aug 16 10:24:46 2021 +0530
+
+    Initial commit
+
+E:\git-repo\repository1 (main -> origin)
+λ git add .
+
+E:\git-repo\repository1 (main -> origin)
+λ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+
+E:\git-repo\repository1 (main -> origin)
+λ git commit -m "Edited the Cloned Repo's ReadMe File on my local device"
+[main 4ade59c] Edited the Cloned Repo's ReadMe File on my local device
+ 1 file changed, 2 insertions(+)
+
+E:\git-repo\repository1 (main -> origin)
+λ git log
+commit 4ade59c47fa0c49bdb53da8aaa908e4b0ba69f22 (HEAD -> main)
+Author: rahul <rahulsatav2@gmail.com>
+Date:   Mon Aug 16 10:42:26 2021 +0530
+
+    Edited the Cloned Repo's ReadMe File on my local device
+
+commit 52b2b5324c01b5b5a2bb83c12f14e4c26346265a (origin/main, origin/HEAD)
+Author: Rahul Satav <73294506+RahulSatav2@users.noreply.github.com>
+Date:   Mon Aug 16 10:24:46 2021 +0530
+
+    Initial commit
+
+E:\git-repo\repository1 (main -> origin)
+λ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 357 bytes | 357.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:RahulSatav2/repository1.git
+   52b2b53..4ade59c  main -> main
+
+E:\git-repo\repository1 (main -> origin)
+λ git add .
+
+E:\git-repo\repository1 (main -> origin)
+λ git commit -m "Made more changes"
+[main bf5cae6] Made more changes
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+E:\git-repo\repository1 (main -> origin)
+λ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+E:\git-repo\repository1 (main -> origin)
+λ git log
+commit bf5cae6379e79908f549e28e89c42f627327eca2 (HEAD -> main)
+Author: rahul <rahulsatav2@gmail.com>
+Date:   Mon Aug 16 10:48:39 2021 +0530
+
+    Made more changes
+
+commit 4ade59c47fa0c49bdb53da8aaa908e4b0ba69f22 (origin/main, origin/HEAD)
+Author: rahul <rahulsatav2@gmail.com>
+Date:   Mon Aug 16 10:42:26 2021 +0530
+
+    Edited the Cloned Repo's ReadMe File on my local device
+
+commit 52b2b5324c01b5b5a2bb83c12f14e4c26346265a
+Author: Rahul Satav <73294506+RahulSatav2@users.noreply.github.com>
+Date:   Mon Aug 16 10:24:46 2021 +0530
+
+    Initial commit
+
+E:\git-repo\repository1 (main -> origin)
+λ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 328 bytes | 328.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:RahulSatav2/repository1.git
+   4ade59c..bf5cae6  main -> main
+
+E:\git-repo\repository1 (main -> origin)
+λ
